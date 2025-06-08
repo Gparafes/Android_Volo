@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="415e1d73-7eb9-4800-9038-cbe9c69a5b48" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Android_Volo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android_Volo/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android_Volo/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android_Volo/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android_Volo/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Android_Volo/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets/migrations/__init__.py" afterDir="false" />
+    <list default="true" id="415e1d73-7eb9-4800-9038-cbe9c69a5b48" name="Changes" comment="Models">
+      <change afterPath="$PROJECT_DIR$/snippets/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/migrations/0002_snippet_owner.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/permissions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/serializers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/snippets/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Android_Volo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android_Volo/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +20,13 @@
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -96,11 +97,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749370642702</updated>
-      <workItem from="1749370644277" duration="1541000" />
+      <workItem from="1749370644277" duration="8320000" />
     </task>
+    <task id="LOCAL-00001" summary="Models">
+      <option name="closed" value="true" />
+      <created>1749372430479</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749372430479</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Models" />
   </component>
 </project>
