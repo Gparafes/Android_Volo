@@ -4,6 +4,13 @@ LANGUAGE_CHOICES = [('abap','ABAP'),('abnf','ABNF'),('ada','ADA'),('adl','ADL'),
                     ('agda','AGDA'),('python','PYTHON')]
 STYLE_CHOICES = [('algol','algol'),('algol_nu','algol_nu'),('friendly','friendly')]
 
+class SensorData(models.Model):
+    timestamp = models.DateTimeField(auto_now_add=True)
+    value = models.FloatField()
+
+    def __str__(self):
+        return f"{self.timestamp} - {self.value}"
+
 class Snippet(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     title = models.CharField(max_length=100, blank=True, default='')

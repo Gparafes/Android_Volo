@@ -3,6 +3,11 @@ from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
 from snippets import views
 from django.conf.urls import include
+from .views import SensorDataAPI
+
+urlpatterns = [
+    path('api/sensor-data/', SensorDataAPI.as_view()),
+]
 
 urlpatterns = [
     path ('snippets/', views.SnippetList.as_view()),

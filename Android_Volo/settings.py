@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-n941^6394@wmyb+ma5$9yhiftyo)wp0-j58x2#32md2vlbu%x_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['gparafes.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'snippets.apps.SnippetsConfig',
     'rest_framework',
     'corsheaders',
-    'your_app_name'
+    'Android_Volo'
 ]
 
 MIDDLEWARE = [
@@ -126,3 +126,6 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CORS_ALLOW_ALL_ORIGINS = True
+
