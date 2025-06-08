@@ -44,3 +44,5 @@ class CommentDetail(generics.RetrieveAPIView):
     serializer_class = CommentSerializer
 
 
+
+
