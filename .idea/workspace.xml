@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="415e1d73-7eb9-4800-9038-cbe9c69a5b48" name="Changes" comment="Models">
-      <change afterPath="$PROJECT_DIR$/snippets/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets/migrations/0002_snippet_owner.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets/permissions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets/serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/snippets/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Android_Volo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Android_Volo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,10 +26,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2yDYWYS5JkXyvPxk5wGZmFe1ITE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -45,7 +42,9 @@
     "Django Server.Android_Volo.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
+    "last_opened_file_path": "C:/Users/crysi/PycharmProjects/tutorial-master",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -98,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1749370642702</updated>
       <workItem from="1749370644277" duration="8320000" />
+      <workItem from="1750172122662" duration="2480000" />
     </task>
     <task id="LOCAL-00001" summary="Models">
       <option name="closed" value="true" />
