@@ -5,3 +5,4 @@ from .models import Sight
 admin.site.register(Sight)
 
 admin.site.register(Snippet)
+
