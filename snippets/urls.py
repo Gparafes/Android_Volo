@@ -9,6 +9,8 @@ urlpatterns = [
     path ('snippets/<int:pk>/', views.SnippetDetail.as_view()),
     path ('users/', views.UserList.as_view()),
     path ('users/<int:pk>/', views.UserDetail.as_view()),
+    path ('sights/', views.SightList.as_view(), name='sight-list'),
+    path ('sights/<int:pk>/', views.SightDetail.as_view(), name='sight-detail'),
 ]
 
 urlpatterns += [

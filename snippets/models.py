@@ -16,4 +16,13 @@ class Snippet(models.Model):
         ordering = ['created']
 
 
+class Sight(models.Model):
+    name = models.CharField(max_length=200)
+    area = models.CharField(max_length=200)
+    construction_date = models.DateField()
+
+    def __str__(self):
+        return self.name
+
+
 

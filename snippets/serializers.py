@@ -13,3 +13,11 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ['id', 'username', 'snippets']
+
+from rest_framework import serializers
+from .models import Sight
+
+class SightSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Sight
+        fields = ['id', 'name', 'area', 'construction_date']

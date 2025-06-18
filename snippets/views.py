@@ -7,6 +7,8 @@ from rest_framework import permissions
 from snippets.permissions import IsOwnerOrReadOnly
 from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
+from .models import Sight
+from .serializers import SightSerializer
 
 class UserList(generics.ListAPIView):
     queryset = User.objects.all()
@@ -34,5 +36,16 @@ class SnippetDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Snippet.objects.all()
     serializer_class = SnippetSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
+
+
+class SightList(generics.ListCreateAPIView):
+    queryset = Sight.objects.all()
+    serializer_class = SightSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+
+class SightDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Sight.objects.all()
+    serializer_class = SightSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 
