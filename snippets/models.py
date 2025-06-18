@@ -25,12 +25,9 @@ class Sight(models.Model):
     name = models.CharField(max_length=200)
     area = models.CharField(max_length=200)
     construction_date = models.DateField()
-    category = models.ForeignKey(
-        Category,
-        on_delete=models.CASCADE,
-        related_name='sights',
-        null=True,
-        blank=True)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE, related_name='sights', null=True, blank=True)
+    description = models.TextField(blank=True)
+    cover_image = models.ImageField(upload_to='sight_images/', null=True, blank=True)
 
     def __str__(self):
         return self.name

@@ -23,10 +23,8 @@ class CategorySerializer(serializers.ModelSerializer):
 
 class SightSerializer(serializers.ModelSerializer):
     category = CategorySerializer(read_only=True)
-    category_id = serializers.PrimaryKeyRelatedField(
-        queryset=Category.objects.all(), source='category', write_only=True
-    )
+    category_id = serializers.PrimaryKeyRelatedField(queryset=Category.objects.all(), source='category', write_only=True)
 
     class Meta:
         model = Sight
-        fields = ['id', 'name', 'area', 'construction_date', 'category', 'category_id']
+        fields = ['id', 'name', 'area', 'construction_date', 'category', 'category_id', 'description', 'cover_image']

@@ -9,6 +9,7 @@ from django_filters.rest_framework import DjangoFilterBackend
 from rest_framework import filters
 from .models import Sight, Category
 from .serializers import SightSerializer, CategorySerializer
+from rest_framework.parsers import MultiPartParser, FormParser
 
 class UserList(generics.ListAPIView):
     queryset = User.objects.all()
@@ -42,10 +43,20 @@ class SightList(generics.ListCreateAPIView):
     queryset = Sight.objects.all()
     serializer_class = SightSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
+    parser_classes = [MultiPartParser, FormParser]
+
+    def perform_create(self, serializer):
+        serializer.save()
 
 class SightDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Sight.objects.all()
     serializer_class = SightSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly, IsOwnerOrReadOnly]
+    parser_classes = [MultiPartParser, FormParser]
+
+class CategoryListCreate(generics.ListCreateAPIView):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly]
 
 class CategoryList(generics.ListCreateAPIView):
