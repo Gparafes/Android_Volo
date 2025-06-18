@@ -15,6 +15,7 @@ class Snippet(models.Model):
     class Meta:
         ordering = ['created']
 
+
 class Category(models.Model):
     name = models.CharField(max_length=100, unique=True)
 
