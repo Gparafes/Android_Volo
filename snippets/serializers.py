@@ -1,6 +1,7 @@
-from rest_framework import serializers
 from snippets.models import Snippet, LANGUAGE_CHOICES, STYLE_CHOICES
 from django.contrib.auth.models import User
+from rest_framework import serializers
+from .models import Sight, Category
 
 class SnippetSerializer(serializers.ModelSerializer):
     owner = serializers.ReadOnlyField(source='owner.username')
@@ -14,10 +15,18 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         fields = ['id', 'username', 'snippets']
 
-from rest_framework import serializers
-from .models import Sight
+class CategorySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Category
+        fields = ['id', 'name']
+
 
 class SightSerializer(serializers.ModelSerializer):
+    category = CategorySerializer(read_only=True)
+    category_id = serializers.PrimaryKeyRelatedField(
+        queryset=Category.objects.all(), source='category', write_only=True
+    )
+
     class Meta:
         model = Sight
-        fields = ['id', 'name', 'area', 'construction_date']
+        fields = ['id', 'name', 'area', 'construction_date', 'category', 'category_id']

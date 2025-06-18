@@ -11,6 +11,10 @@ urlpatterns = [
     path ('users/<int:pk>/', views.UserDetail.as_view()),
     path ('sights/', views.SightList.as_view(), name='sight-list'),
     path ('sights/<int:pk>/', views.SightDetail.as_view(), name='sight-detail'),
+    path('categories/', views.CategoryList.as_view(), name='category-list'),
+    path('categories/<int:pk>/', views.CategoryDetail.as_view(), name='category-detail'),
+    path('sights/', views.SightList.as_view(), name='sight-list'),
+    path('sights/<int:pk>/', views.SightDetail.as_view(), name='sight-detail'),
 ]
 
 urlpatterns += [
